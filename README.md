@@ -51,4 +51,17 @@ that should be given to each class while training is also presented which we cal
 
 ## Evaluation and Results
 
+### Training and Validation Plots
+<p align="center">
+  <img src="https://github.com/kdave97/Terrain-Identification/blob/master/evaluation.PNG">
+</p>
 
+### Confusion matrix
+<p align="center">
+  <img src="https://github.com/kdave97/Terrain-Identification/blob/master/confusion_matrix.PNG">
+</p>
+
+### Classification Report
+<p align="center">
+  <img src="https://github.com/kdave97/Terrain-Identification/blob/master/classification%20report.PNG">
+</p>
