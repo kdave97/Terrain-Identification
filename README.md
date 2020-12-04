@@ -20,5 +20,8 @@ Accelerometer and gyroscope are the two most common sensors that are used for te
 * We found that for every four instances of the accelerometer and gyroscope values, there is a corresponding label. We extrapolated the label from y to correspond to 4 rows for sensor measurements. Therefore, each sensor measurement consisting of 6 data-points (x1, y1, z1, x2, y2, z2) along with its extrapolated label becomes our single data instance.
 * We know that the dataset is skewed heavily with 0 label being the most common. The distribution of overall dataset can be seen in table I. The corresponding importance
 that should be given to each class while training is also presented which we calculated using the scikit-learn package.
-* We used each file as input instance rathar than merging all files into one. We used overlapping windowing approach to capture the continuous representation of data. We later concatenated the windowed data from each file. The final shape of the dataset will be total-windows*window-size*6 for a single input file.
+* We used each file as input instance rathar than merging all files into one. We used overlapping windowing approach to capture the continuous representation of data. We later concatenated the windowed data from each file. The final shape of the dataset will be total-windows * window-size * 6 for a single input file.
 
+<p align="center">
+  <img src="https://github.com/kdave97/Terrain-Identification/blob/master/window-size.PNG">
+</p>
