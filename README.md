@@ -25,3 +25,30 @@ that should be given to each class while training is also presented which we cal
 <p align="center">
   <img src="https://github.com/kdave97/Terrain-Identification/blob/master/window-size.PNG">
 </p>
+
+## Hyperparamter Tuning
+* Window Size - The size of the window determines the time taken by the robot to travel on a terrain. We decided to use window size of 30 on data from x which is equivalent to 0.75s and also a window size of 60 which represents 1.5s. 
+
+| Window Size | Accuracy | F1 Score |
+| ----------- | -------- | -------- |
+|     60      |   0.95   |   0.93   |
+|     30      |   0.93   |   0.90   |
+
+* Hidden Units - The number of hidden units determine the capability of the model to generate various features based on the data.
+
+| Hidden Units | Accuracy | F1 Score |
+| ------------ | -------- | -------- |
+|     128      |   0.95   |   0.93   |
+|     256      |   0.91   |   0.88   |
+
+* Step Size - Step size is an important parameter in determining how much the model should skip in batch while training. This will help in eliminating some of the data which can create anomaly in the dataset.
+
+|  Step Size   | Accuracy | F1 Score |
+| ------------ | -------- | -------- |
+|     1      |   0.95   |   0.93   |
+|     4      |   0.92   |   0.90   |
+|     30      |   0.86   |   0.82   |
+
+## Evaluation and Results
+
+
